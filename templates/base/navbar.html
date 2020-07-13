@@ -1,0 +1,28 @@
+  {% load static %}
+  <nav id="topNav" class="navbar navbar-expand-md navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="{% url 'portfolio:portfolio_home'%}">
+        <img src="{% static "portfolio/img/devlogo.png" %}" width="60" height="35" class="d-inline-block align-top"
+          alt="Hito logo">
+        <span>Victor Ravelo</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% static 'portfolio/files/cv.pdf' %}">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/victor-ravelo-valerio-b6ab9954/"
+              target="_blank">LinkedIn</a>
+          </li>
+          <li>
+            <a role="button" href="{% url 'blog:all_blogs' %}" class="btn btn-primary">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
